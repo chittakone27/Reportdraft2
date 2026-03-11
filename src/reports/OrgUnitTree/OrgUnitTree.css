@@ -1,0 +1,89 @@
+
+/* เปลี่ยน + */
+/* Toggle spacing */
+.react-dropdown-tree-select .toggle {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+/* โฟลเดอร์ปิด */
+
+.react-dropdown-tree-select .toggle {
+  background-image: url("../../icons/Open.png");
+}
+
+/* โฟลเดอร์เปิด */
+.react-dropdown-tree-select .toggle.expanded {
+  background-image: url("../../icons/Close.png");
+}
+
+/* ซ่อนลูกศรเดิม */
+.react-dropdown-tree-select .toggle::after {
+  display: none !important;
+}
+.modern-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.modern-table thead {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+}
+
+.modern-table th,
+.modern-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.modern-table tbody tr {
+  background-color: #f9f9f9;
+  transition: all 0.2s ease-in-out;
+}
+
+.modern-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.modern-table tbody tr:hover {
+  background-color: #e0e0ff;
+}
+
+.modern-table th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.modern-table th:last-child {
+  border-top-right-radius: 12px;
+}
+/* Hide radio for all non-leaf or non-selectable nodes */
+.non-selectable-node input[type="radio"] {
+  display: none !important;
+}
+/* Scrollable wrapper with fixed height */
+.dropdown-scroll-container {
+  height: 250px;       /* fixed height */
+  overflow-y: auto;    /* enable vertical scroll */
+  border: 1px solid #ccc;  /* optional border */
+  border-radius: 4px;
+}
+
+/* Hide radios for parents */
+.non-selectable-node input[type="radio"] {
+  display: none !important;
+}
+.lao-toast {
+  font-family: "Noto Sans Lao", sans-serif;
+}
+

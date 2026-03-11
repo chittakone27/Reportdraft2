@@ -1,0 +1,23 @@
+{
+  "launch_path": "index.html",
+  "default_locale": "en",
+  "activities": {
+    "dhis": {
+      "href": "*"
+    }
+  },
+  "appType": "DASHBOARD_WIDGET",
+  "name": "ບົດລາຍງານປະຈໍາປີ Facility Mapping",
+  "version": "0.1.1",
+  "description": "TEST DASHBOARD WIDGET APP",
+  "developer": {
+    "name": "owen"
+  },
+  "key": "ow",
+  "short_name": "ow",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

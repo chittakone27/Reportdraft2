@@ -1,0 +1,45 @@
+{
+  "name": "standard-report-env",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "cross-env VITE_MODE=production VITE_BASE_URL=../ VITE_USERNAME= VITE_PASSWORD= vite build",
+    "build-as-app": "cross-env VITE_MODE=production VITE_BASE_URL=../../.. VITE_USERNAME= VITE_PASSWORD= VITE_REPORT_MODE=app vite build && node app.js",
+    "deploy": "cross-env VITE_MODE=production VITE_BASE_URL=../ VITE_USERNAME= VITE_PASSWORD= vite build && node publish.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "bestzip": "^2.2.1",
+    "btoa": "^1.2.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "vite": "^2.8.0",
+    "vite-plugin-singlefile": "^0.7.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
+    "@mui/x-data-grid": "^8.19.0",
+    "antd": "^5.29.1",
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.3",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.4",
+    "jspdf-autotable": "^5.0.2",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^18.3.1",
+    "react-dropdown-tree-select": "^2.8.0",
+    "react-sortable-tree": "^2.8.0",
+    "react-to-print": "^3.2.0",
+    "react-toastify": "^11.0.3",
+    "recoil": "^0.7.7",
+    "styled-jsx": "^5.1.7"
+  }
+}
