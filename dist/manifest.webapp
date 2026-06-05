@@ -7,14 +7,14 @@
     }
   },
   "appType": "DASHBOARD_WIDGET",
-  "name": "ບົດລາຍງານປະຈໍາປີ Facility Mapping",
+  "name": "ອະນຸມັດຈໍານວນຜູ້ເສຍຊີວິດປະຈໍາໄຕມາດ",
   "version": "0.1.1",
-  "description": "TEST DASHBOARD WIDGET APP",
+  "description": "DASHBOARD WIDGET APP",
   "developer": {
     "name": "owen"
   },
-  "key": "ow",
-  "short_name": "ow",
+  "key": "Approval_of_Number_of_Deaths",
+  "short_name": "Approval of Number of Deaths",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",

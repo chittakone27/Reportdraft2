@@ -1,0 +1,31 @@
+/* index.css */
+
+/* Apply Noto Sans Lao to the whole page */
+html, body, #root {
+  font-family: 'Noto Sans Lao', sans-serif !important;
+}
+
+/* Force all text inside Ant Design components to use Noto Sans Lao */
+.ant-typography *,
+.ant-btn *,
+.ant-select-selector *,
+.ant-input-number *,
+.ant-card *,
+.ant-form-item-label *,
+.ant-table *,
+.ant-select-dropdown *,
+.ant-select-item-option-content *,
+.ant-select-item-option *,
+.ant-tabs-tab-btn * {
+  font-family: 'Noto Sans Lao', sans-serif !important;
+}
+
+/* Apply font to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans Lao', sans-serif !important;
+}
+
+/* Optional: ensure table summary cells also inherit the font */
+.ant-table-summary-cell {
+  font-family: 'Noto Sans Lao', sans-serif !important;
+}

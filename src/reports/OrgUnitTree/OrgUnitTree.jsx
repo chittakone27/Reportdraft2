@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import DropdownTreeSelect from "react-dropdown-tree-select";
 import "react-dropdown-tree-select/dist/styles.css";
-import "./OrgUnitTree.css";
+// import "./OrgUnitTree.css";
 
 const OrgUnitTree = ({ data = [], onChange }) => {
   const sortedData = useMemo(() => {
@@ -26,6 +26,7 @@ const OrgUnitTree = ({ data = [], onChange }) => {
         keepTreeOnSearch
         placeholder="Select an Org Unit"
         className="w-100 custom-dropdown"
+        
       />
     </div>
   );
