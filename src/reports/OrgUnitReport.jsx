@@ -2,11 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import OrgUnitTree from "./OrgUnitTree/OrgUnitTree";
 import { API_AUTH } from "../config";
-// import Fake from "./fakebutton";
-import Test from "./test";
 import "../App.css";
-import AggregateApproval from'./aggregateApproval'
-import ApprovalTable from './approvalTable'
 // Ant Design
 import {
   Button,
@@ -243,43 +239,7 @@ const OrgUnitReport = () => {
         </Space>
       </Card>
 
-      {reportParams && (
-   <Tabs
-  activeKey={activeTab}
-  onChange={(key) => setActiveTab(key)}
-  style={{ marginTop: 20 }}
-  tabBarStyle={{ fontFamily: "'Noto Sans Lao', sans-serif", fontSize: 16 }}
->
-  <TabPane
-  tab="ອະນຸມັດຈໍານວນຜູ້ເສຍຊີວິດປະຈໍາໄຕມາດ"
-  key="details"
->
-  <h1>{reportParams.orgUnitLabel}</h1>
-  
-  {reportParams.orgUnitLevel !== 5 && confirm == 0 && report == 0 && (
-    <AggregateApproval
-      orgUnitId={reportParams.orgUnitId}
-      year={reportParams.year}
-      quarter={reportParams.quarter}
-      Level={reportParams.orgUnitLevel}
-      Label={reportParams.orgUnitLabel}
-      confirm ={confirm}
-      report ={report}
-      onSuccess={handleApprovalSuccess}
-    />
-   )} 
-        <ApprovalTable orgUnitId={reportParams.orgUnitId} year={reportParams.year} quarter={reportParams.quarter} Level={reportParams.orgUnitLevel}label ={reportParams.orgUnitLabel} Confirm={setConfirm} Report={setReport}/>
-  <Test
-    key={refreshKey}   // 👈 forces remount
-    orgUnitId={reportParams.orgUnitId}
-    year={reportParams.year}
-    quarter={reportParams.quarter}
-    level={reportParams.orgUnitLevel}
-    Label={reportParams.orgUnitLabel}
-  />
-</TabPane>
-        </Tabs>
-      )}
+     
     </div>
   );
 };
